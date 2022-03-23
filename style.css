@@ -1,20 +1,27 @@
+.one {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+  }
+.one img {
+    width: 400px;
+    height: 200px;
+}
 .dot {
-    width: 25px;
-    height: 25px;
+    display: inline-block;
+    background-color: rgb(55, 55, 55);
+    width: 15px;
+    height: 15px;
     border: 2px solid white;
     border-radius: 50%;
-    background-color: gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    cursor: pointer;
-}
-.main {
-    background: url(image.jpg) no-repeat;
-    background-size: 100%;
+    margin: 2px;
+    position: relative;
+    z-index: 2;
+    left: 150px;
+    top: -30px;
 }
 .dot:hover {
     box-shadow: 0 0 25px 10px white;
     background-color: darkred;
+    cursor: pointer;
 }
