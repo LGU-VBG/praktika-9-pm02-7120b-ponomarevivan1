@@ -1,5 +1,32 @@
-.all {
-    border: 1px solid black;
+.box {
+    text-align: center;
+    background-color: white;
 }
-.one {
+.xob {
+    display: inline-block;
+    margin: 0;
+}
+.chess {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.chess td {
+    border: 1px solid;
+    width: 5em; height: 5em;
+    text-align: center;
+    vertical-align: middle;
+}
+.chess td:hover {
+    cursor: pointer;
+}
+.chess td:active {
+    vertical-align: middle;
+}
+.chess td span {
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+.chess td:hover span {
+    opacity: 1;
 }
